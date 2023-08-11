@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-language" content="es">
+	<link rel="stylesheet" type="text/css" href="../estilos/mensajes.css">
+	<link rel="icon" type="jpg/png" href="../imagenes/sistema/logo.png">
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+	<header class="contenedor_uno">
+		<div class="plantilla_uno">
+			<div class="cont_atras">
+				<img src="../imagenes/sistema/atrasn.png" class="atras">
+				<div></div>
+			</div>
+			<h2>Chats</h2>
+			<div class="cont_usuarios">
+			</div>
+		</div>
+	</header>
+	<div class="contenedor_dos">
+		<div class="plantilla_dos">
+			<div class="cont_cerrar">
+				<div></div>
+				<img src="../imagenes/sistema/cerrar.png" class="cerrar">
+			</div>
+			<div class="contenedor_nombre">
+			</div>
+			<div class="cont_mensajes">
+			</div>
+			<div class="escribir_mensaje">
+				<textarea placeholder="Nuevo mensaje" class="nuevo"></textarea>
+				<button class="enviar">Enviar mensaje</button>
+			</div>
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="../scripts/mensajes.js"></script>
+</body>
+</html>

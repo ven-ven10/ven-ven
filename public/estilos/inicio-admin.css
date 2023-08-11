@@ -1,0 +1,95 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D5D8DC;
+}
+.contenedor_uno{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.plantilla_uno{
+	width: 90%;
+	background-color: #D35400;
+	height: 210px;
+	border-radius: 15px;
+	box-shadow: 5px 10px 15px;
+	text-align: center;
+	margin-top: 15px;
+}
+.titulo{
+	color: #D5D8DC;
+	padding: 5px 0px;
+}
+.entradas{
+	font-size: 1.2rem;
+	outline: none;
+	padding: 3px 5px;
+	margin-bottom: 5px;
+	width: 90%;
+	border: 1px solid #000;
+}
+.entradas::placeholder{
+	color: #888;
+}
+.cont_mostrar{
+	color: #D5D8DC;
+	padding: 4px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.opciones{
+	width: 160px;
+}
+.parrafo{
+	font-weight: 600;
+	color: #D5D8DC;
+}
+.texto, .olvidado{
+	cursor: pointer;
+	font-size: .9rem;
+}
+.check{
+	cursor: pointer;
+}
+.cont_botones{
+	padding: 4px 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.botones{
+	cursor: pointer;
+	padding: 3px 5px;
+	border: none;
+	border-radius: 15px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #D35400;
+	background-color: #D5D8DC;
+	width: 100px;
+}
+.botones:hover{
+	background-color: #ffffff;
+}
+.leyenda{
+	color: #D5D8DC;
+}
+/*Diseño de la plantilla en diferentes dimensiones*/
+@media(min-width: 305px){
+	.leyenda{
+		width: 270px;
+		margin: auto;
+	}
+}
+@media(min-width: 350px){
+	.plantilla_uno{
+		width: 315px;
+	}
+	.titulo{
+		font-size: 1.8rem;
+	}
+}

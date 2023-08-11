@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cuenta-admin</title>
+	<meta name="title" content="Cuenta-admin">
+	<meta http-equiv="content-language" content="es">
+	<link rel="stylesheet" type="text/css" href="../estilos/cuenta-admin.css">
+	<link rel="icon" type="jpg/png" href="../imagenes/sistema/logo.png">
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+	<div class="contenedor_uno">
+		<div class="plantilla_uno">
+			<input type="file" accept=".png, .jpg, .gif" name="FOTO" hidden class="imagen">
+			<div class="cont_atras">
+				<img src="../imagenes/sistema/atrasn.png" class="atras">
+				<div></div>
+			</div>
+			<h2>Cuenta</h2>
+			<div class="cont_foto">
+				<img class="foto">
+				<button class="botones cambiarF">Cambiar</button>
+			</div>
+			<div class="cont_datos">
+				<div class="datos">
+					<div class="info">
+						<h4>Nombre:</h4>
+						<p class="separado nombre"></p>
+					</div>
+					<div class="cont_boton">
+						<button class="botones cambiarN">Cambiar</button>
+					</div>
+				</div>
+				<div class="datos">
+					<div class="info">
+						<h4>Apellido:</h4>
+						<p class="separado apellido"></p>
+					</div>
+					<div class="cont_boton">
+						<button class="botones cambiarA">Cambiar</button>
+					</div>
+				</div>
+				<div class="datos">
+					<div class="info">
+						<h4>Correo:</h4>
+						<p class="separado correo"></p>
+					</div>
+					<div class="cont_boton">
+						<button class="botones cambiarCrr">Cambiar</button>
+					</div>
+				</div>
+				<div class="datos">
+					<div class="info">
+						<h4>Contraseña:</h4>
+						<p class="separado contraseña">************</p>
+					</div>
+					<div class="cont_boton">
+						<button class="botones cambiarCnt">Cambiar</button>
+					</div>
+				</div>
+			</div>
+			<div class="cont_eliminar">
+				<button class="botones eliminar">Eliminar cuenta</button>
+			</div>
+		</div>
+	</div>
+	<div class="contenedor_dos">
+		<div class="plantilla_dos">
+			<div class="cont_cerrar">
+				<div></div>
+				<img src="../imagenes/sistema/cerrar.png" class="cerrar">
+			</div>
+			<h2 class="subtitulo"></h2>
+			<input type="text" class="entradas cambio">
+			<p class="parrafo"></p>
+			<div>
+				<button class="botones actualizar">Actualizar</button>
+			</div>
+		</div>
+	</div>
+	<div class="contenedor_tres">
+		<div class="plantilla_tres">
+			<h2>Eliminar cuenta</h2>
+			<p class="texto">Si continúas con la petición se eliminará definitivamente tu cuenta de administrador y no podrás recuperar la información proporcionada a la plataforma, ¿Quieres confirmar con esta acción?</p>
+			<div class="cont_botones">
+				<button class="botones regreso">Regresar</button>
+				<button class="botones confirmar">Confirmar</button>
+			</div>
+		</div>
+	</div>
+	<script src="../scripts/cuenta-admin.js"></script>
+</body>
+</html>

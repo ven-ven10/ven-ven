@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin-aplication/*
+Allow: /iniciar
+Allow: /registro
+Allow: /peliculas/
+Sitemap: https://ven-ven.com/sitemap.xml

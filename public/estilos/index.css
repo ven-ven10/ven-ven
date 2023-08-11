@@ -1,0 +1,53 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D5D8DC;/*Color crema*/
+}
+/*Diseño del título y subtitulo*/
+.cont_principal{
+	width: 100%;
+	color: #D35400;/*Color café*/
+	text-align: center;
+}
+.titulo{
+	font-size: 3.8rem;
+	padding-top: 50px;
+}
+.subtitulo{
+	padding-top: 25px;
+}
+/*Diseño de botones de ingreso*/
+.inicio{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.cont_botones{
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0px;
+}
+.botones{
+	cursor: pointer;
+	padding: 7px;
+	font-size: 1.7rem;
+	font-weight: 600;
+	background-color: #D35400;
+	color: #D5D8DC;
+	border: none;
+	border-radius: 15px;
+	margin: 10px 0px;
+	width: 190px;
+}
+.botones:hover{
+	background-color: #D33500;
+}
+/*Diferentes dimensiones de dispositivo*/
+@media(min-width: 650px){
+	.titulo{
+		font-size: 5.5rem;
+	}
+}

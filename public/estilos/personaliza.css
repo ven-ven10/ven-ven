@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D5D8DC;
+}
+/*Diseño de plantilla de elección del personaje*/
+.contenedor_uno{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.plantilla_uno{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+	text-align: center;
+	background-color: #D35400;
+	border-radius: 15px;
+	box-shadow: 5px 10px 15px;
+	margin: 15px 0px;
+}
+.titulo{
+	padding: 15px 0px;
+	color: #D5D8DC;
+}
+.galeria{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.cont{
+	flex-shrink: 0;
+	flex-grow: 1;
+	flex-basis: 150px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+.valor{
+	width: 120px;
+	height: 120px;
+	border-radius: 15px;
+}
+.imagenes{
+	width: 100px;
+	cursor: pointer;
+}
+.cont_botones{
+	display: flex;
+	justify-content: space-around;
+	padding: 15px 0px;
+}
+.botones{
+	font-size: 1.1rem;
+	border: none;
+	background-color: #D5D8DC;
+	color: #D35400;
+	padding: 3px 5px;
+	width: 100px;
+	border-radius: 15px;
+}
+.omitir{
+	cursor: pointer;
+}
+/*Diseño de la plantilla en diferentes dimensines*/
+@media(min-width: 400px){
+	.plantilla_uno{
+		width: 345px;
+	}
+	.titulo{
+		font-size: 3rem;
+	}
+	.galeria{
+		flex-direction: row;
+	}
+}
+@media(min-width: 600px){
+	.plantilla_uno{
+		width: 550px;
+	}
+	.titulo{
+		font-size: 3.5rem;
+		padding: 20px;
+	}
+}
+@media(min-width: 800px){
+	.plantilla_uno{
+		width: 750px;
+	}
+	.cont_botones{
+		padding-bottom: 30px;
+	}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Películas sin anuncios y gratis | registro | ven-ven.com</title>
+	<meta name="title" content="Películas sin anuncios y gratis | registro | ven-ven.com">
+	<meta name="description" content="Registrate para que disfrutes de todo el contenido en películas sin anuncios y totalmente gratis, ver más...">
+	<meta name="keywords" content="registrarme gratis, películas sin anuncios, registro, ver">
+	<meta http-equiv="content-language" content="es">
+	<link rel="canonical" href="https://ven-ven.com/registro">
+	<link rel="stylesheet" type="text/css" href="../estilos/registro.css">
+	<link rel="icon" type="jpg/png" href="../imagenes/sistema/logo.png">
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+	<header class="contenedor_uno">
+		<div class="plantilla_uno">
+			<h2 class="subtitulo">Registro</h2>
+			<input type="text" required class="entradas nombre" placeholder="Nombre">
+			<input type="text" required class="entradas apellido" placeholder="Apellido">
+			<input type="Email" required class="entradas correo" placeholder="Correo">
+			<input type="password" required class="entradas contraseña" placeholder="Contraseña">
+			<input type="password" required class="entradas confirmar" placeholder="Confirmar contraseña">
+			<p class="parrafo"></p>
+			<div class="cont_ver">
+				<input type="checkbox" class="check">
+				<label class="ver">Ver contraseñas</label>
+			</div>
+			<div class="cont_botones">
+				<button class="botones regresar">Regresar</button>
+				<button class="botones registrarme">Registrarme</button>
+			</div>
+			<p class="leyenda">¿Ya tienes una <a href="iniciar">Cuenta</a>?</p>
+		</div>
+	</header>
+	<div class="cont_emergente">
+		<div class="emergente">
+			<div class="cont_imagen">
+				<img src="../imagenes/sistema/atrasn.png" class="imagen">
+				<div></div>
+			</div>
+			<h2>Usuario ya registrado</h2>
+			<p>El correo que ingresaste ya esta registrado intenta con otro correo electrónico</p>
+		</div>
+	</div>
+	<script src="../scripts/registro.js"></script>
+</body>
+</html>

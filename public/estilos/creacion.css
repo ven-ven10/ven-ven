@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D5D8DC;
+}
+/*Diseño del formulario*/
+.contenedor_uno{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.cont_datos{
+	background-color: #D35400;
+	border-radius: 15px;
+	width: 90%;
+	height: 270px;
+	margin: 15px 0px;
+	box-shadow: 5px 10px 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	text-align: center;
+}
+.subtitulo{
+	color: #D5D8DC;
+}
+.entradas{
+	outline: none;
+	padding: 3px 5px;
+	font-size: 1.2rem;
+	margin-top: 5px;
+	border: 1px solid #000;
+}
+.entradas::placeholder{
+	color: #888;
+}
+.parrafo{
+	color: #D5D8DC;
+	font-weight: 600;
+}
+.cont_botones{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px 0px;
+}
+.botones{
+	border: none;
+	font-size: 1rem;
+	background-color: #D5D8DC;
+	cursor: pointer;
+	width: 120px;
+	padding: 3px 5px;
+	color: #D35400;
+	border-radius: 15px;
+	font-weight: 600;
+}
+.botones:hover{
+	background-color: #ffffff;
+}
+.ver, .check{
+	cursor: pointer;
+	color: #D5D8DC;
+}
+.redireccion{
+	color: #D5D8DC;
+}
+.leyenda{
+	color: #D5D8DC;
+}
+@media(min-width: 350px){
+	.cont_datos{
+		width: 325px;
+	}
+}
+@media(min-width: 460px){
+	.emergente{
+		width: 410px;
+	}
+}

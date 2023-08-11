@@ -1,0 +1,191 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D35400;
+}
+/*Barra estatica*/
+.navegador{
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 10px 0px;
+	width: 100%;
+	border-bottom: 5px solid rgba(0, 0, 0, .1);
+	background-color: #D35400;
+}
+.cont{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.cont_buscar{
+	display: flex;
+	width: 80%;
+}
+.entradas{
+	outline: none;
+	padding: 4px;
+	font-size: 1rem;
+	width: 70%;
+	height: 20px;
+	border: 1px solid #000;
+}
+.entradas::placeholder{
+	color: #888;
+}
+.botones{
+	border: none;
+	padding: 3px 5px;
+	font-size: 1rem;
+	background-color: #D5D8DC;
+	height: 29px;
+	cursor: pointer;
+	color: #D35400;
+}
+.menu, .cerrar{
+	width: 30px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.cont_opciones{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	left: -100%;
+	background-color: #D35400;
+	transition: .5s;
+}
+.cont_cerrar{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+.opciones{
+	color: #D5D8DC;
+	padding: 5px 3px 0px 3px;
+	font-size: 1.7rem;
+}
+.cont_iconos{
+	display: flex;
+	width: 100%;
+	padding: 5px;
+	border-bottom: 5px solid rgba(0, 0, 0, .1);
+}
+.cont_iconos:hover{
+	background-color: #D33500;
+	cursor: pointer;
+}
+.iconos, .foto{
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.foto{
+	border-radius: 10px;
+	border: 1px solid #000000;
+}
+/*Logo de la aplicacion*/
+.cont_presentacion{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.logo{
+	margin-top: 50px;
+	width: 90%;
+}
+/*Diseño de la presentación de las películas*/
+.cont_categorias{
+	margin: 25px 0px;
+}
+.nom_categoria{
+	padding: 5px 5px 0px 0px;
+}
+.cont_lista{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+.cont_lista::-webkit-scrollbar{
+	height: 10px;
+	border: 1px solid #A11300;
+}
+.cont_lista::-webkit-scrollbar-thumb{
+	background-color: #D33500;
+	border-radius: 15px;
+}
+.pelicula{
+	flex-basis: 190px;
+	flex-shrink: 0;
+	flex-flow: 0;
+	height: 390px;
+	margin: 15px;
+	box-shadow: 1px 1px 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-direction: column ;
+
+}
+.imagen{
+	width: 170px;
+	margin: 10px auto;
+}
+.titulos{
+	padding: 0px 5px;
+	text-align: center;
+	font-size: 1rem;
+	user-select: none;
+}
+/*Final de la página*/
+.cont_final{
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 45px;
+	font-weight: 600;
+}
+/*Diseño de la plantilla en diferentes dimensiones*/
+@media(min-width: 500px){
+	.logo{
+		width: 350px;
+	}
+	.cont_categorias{
+		width: 90%;
+		margin: 30px auto;
+	}
+	.cont_lista::-webkit-scrollbar{
+		height: 15px;
+	}
+}
+
+@media(min-width: 900px){
+	.cont_menu, .cont_cerrar{
+		display: none;
+	}
+	.cont_opciones{
+		position: initial;
+		flex-direction: row;
+		height: 30px;
+	}
+	.cont_iconos{
+		margin-right: 10px;
+		width: 130px;
+		justify-content: center;
+		flex-direction: row;
+	}
+	.cont_iconos:hover{
+		background-color: #D35400;
+	}
+	.opciones{
+		font-size: 1.2rem;
+	}
+}

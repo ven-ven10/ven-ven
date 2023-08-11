@@ -1,0 +1,234 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D35400;
+}
+.cont_principal{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.cont_datos{
+	width: 90%;
+	background-color: #D5D8DC;
+	height: 620px;
+	margin: 15px 0px;
+	box-shadow: 5px 10px 15px;
+	text-align: center;
+	border-radius: 15px;
+}
+.cont_atras{
+	display: flex;
+}
+.atras, .atrasdos, .atrastres{
+	width: 30px;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.titulo, .subtitulos, .parrafos{
+	color: #D35400;
+}
+.cont_foto{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.foto{
+	width: 70px;
+	height: 70px;
+	border: 2px solid #D35400;
+	margin: auto;
+}
+.informacion1{
+	display: none;
+}
+.datos{
+	margin: 15px 0px;
+}
+.cont_boton2{
+	padding: 10px 0px;
+}
+.botones{
+	cursor: pointer;
+	font-size: 1.2rem;
+	border: none;
+	background-color: #D35400;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #D5D8DC;
+}
+.eliminar, .cambio{
+	cursor: pointer;
+	font-size: 1.2rem;
+	border: none;
+	background-color: #D35400;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #D5D8DC;
+	margin-top: 5px;
+}
+/*Plantilla de cambio de actualizacion de datos*/
+.cont_cambio, .cont_exitoso, .cont_eliminar, .cont_eliminada{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .85);
+}
+.cambiador{
+	width: 90%;
+	height: 175px;
+	background-color: #D35400;
+	text-align: center;
+	box-shadow: 5px 10px 15px;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+.cont_atrasdos, .cont_atrastres{
+	display: flex;
+	justify-content: space-between;
+}
+.diferentes{
+	color: #D5D8DC;
+}
+.entradas{
+	padding: 5px;
+	outline: none;
+	font-size: 1.2rem;
+	width: 90%;
+	margin: 5px 0px;
+	border: 1px solid #000;
+}
+.entradas::placeholder{
+	color: #888;
+}
+.parrafo{
+	font-size: .9rem;
+	font-weight: 600;
+	color: #D5D8DC;
+}
+.listouno, .listodos, .continuar{
+	cursor: pointer;
+	font-size: 1.2rem;
+	border: none;
+	background-color: #D5D8DC;
+	border-radius: 15px;
+	padding: 5px 10px;
+	color: #D35400;
+	margin-top: 5px;
+}
+/*Diseño de la plantilla de cambio exitoso*/
+.exitoso{
+	width: 90%;
+	height: 80px;
+	text-align: center;
+	box-shadow: 5px 10px 15px;
+	background-color: #D35400;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+.subtitulo{
+	color: #D5D8DC;
+	padding-top: 10px;
+}
+/*Diseño de la plantilla de eliminar cuenta*/
+.plantillauno{
+	width: 90%;
+	height: 200px;
+	text-align: center;
+	box-shadow: 5px 10px 15px;
+	background-color: #D35400;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+.texto{
+	color: #D5D8DC;
+	padding: 5px;
+}
+/*Diseño plantilla de cuenta eliminada*/
+.eliminada{
+	width: 90%;
+	height: 150px;
+	text-align: center;
+	box-shadow: 5px 10px 15px;
+	background-color: #D35400;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+.textouno{
+	color: #D5D8DC;
+	padding: 5px;
+	font-size: 1.2rem;
+}
+@media(min-width: 300px){
+	.titulo, .subtitulo{
+		font-size: 2rem;
+	}
+	.parrafos{
+		font-size: 1.2rem;
+	}
+	.entradas{
+		width: 250px;
+	}
+	.exitoso{
+		height: 100px;
+	}
+}
+@media(min-width: 400px){
+	.texto{
+		font-size: 1.3rem;
+	}
+	.parrafos{
+		font-size: 1.3rem;
+	}
+}
+@media(min-width: 470px){
+	.cont_datos, .cambiador, .exitoso, .plantillauno, .eliminada{
+		width: 440px;
+	}
+	.cont_datos{
+		height: 425px;
+	}
+	.informacion{
+		display: none;
+	}
+	.informacion1{
+		display: flex;
+		margin: auto;
+		width: 90%;
+		justify-content: center;
+	}
+	.datos{
+		display: flex;
+		border-bottom: 3px solid rgba(0, 0, 0, .2);
+		padding: 0px 5px;
+		font-size: 1.2rem;
+	}
+	.subtitulos, .parrafos{
+		text-align: left;
+	}
+	.subtitulos{
+		margin-right: 5px;
+	}
+	.cont_botones{
+		display: flex;
+		flex-direction: column;
+	}
+	.botones{
+		margin-top: 15px;
+		margin-left: 10px;
+	}
+}
+@media(min-width: 540px){
+	.cont_datos{
+		width: 520px;
+	}
+}

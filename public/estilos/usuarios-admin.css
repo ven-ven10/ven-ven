@@ -1,0 +1,64 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D35400;
+}
+/*Diseño del contenedor uno*/
+.contenedor_uno{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.plantilla_uno{
+	width: 90%;
+	background-color: #D5D8DC;
+	text-align: center;
+	box-shadow: 5px 10px 15px;
+	margin: 10px 0px;
+}
+.cont_atras{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.atras{
+	width: 25px;
+	height: 20px;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.titulo{
+	font-size: 2rem;
+}
+.cont_lista{
+	width: 90%;
+	height: 500px;
+	overflow-y: scroll;
+	margin: 10px auto;
+}
+.usuario{
+	display: flex;
+	border: 1px solid #444;
+	margin: 10px 0px;
+}
+.imagen{
+	width: 50px;
+	height: 50px;
+}
+.nombre, .correo{
+	margin-left: 5px;
+}
+.info{
+	display: flex;
+	margin-top: 5px;
+}
+
+@media(min-width: 660px){
+	.plantilla_uno{
+		width: 594px;
+	}
+}

@@ -1,0 +1,191 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D5D8DC;
+}
+/*Diseño de la plantilla de cambio de foto*/
+.cont_principal{
+	width: 100%;
+	background-color: #D5D8DC;
+	display: flex;
+	justify-content: center;
+}
+.contenedor{
+	background-color: #D35400;
+	width: 90%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	text-align: center;
+	padding: 10px 0px;
+	box-shadow: 5px 10px 15px;
+}
+.titulo{
+	font-size: 2rem;
+	color: #D5D8DC;
+	padding: 5px 0px;
+}
+.cont_fotos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.cont{
+	display: flex;
+	justify-content: center;
+	margin: 10px 0px;
+}
+.plant{
+	border-radius: 15px;
+	width: 110px;
+	height: 110px;
+	cursor: pointer;
+}
+.fotos{
+	width: 100px;
+}
+.cont_buscar{
+	padding: 10px 0px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.botones{
+	cursor: pointer;
+	border: none;
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 15px;
+	background-color: #D5D8DC;
+	color: #D35400;
+}
+.cont_botones{
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.continuar{
+	background-color: #D35400;
+	color: #FFFFFF;
+	border: none;
+	font-size: 1rem;
+	padding: 3px 8px;
+	border-radius: 15px;
+}
+/*Diseño de la plantilla emergente de exito*/
+.cont_emergente{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .85);
+	display: none;
+	justify-content: center;
+}
+.emergente{
+	width: 90%;
+	margin-top: 15px;
+	box-shadow: 5px 10px 15px;
+	background-color: #D35400;
+	text-align: center;
+	border-radius: 15px;
+	height: 70px;
+	padding: 15px 0px;
+}
+.exito{
+	color: #D5D8DC;
+}
+.listo{
+	width: 100px;
+}
+/*Diseño de la plantilla de aviso*/
+.cont_aviso{
+	position: fixed;
+	display: none;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .85);
+}
+.aviso{
+	background-color: #D35400;
+	text-align: center;
+	width: 90%;
+	height: 170px;
+	border-radius: 15px;
+	box-shadow: 5px 10px 15px;
+	margin-top: 15px;
+}
+.cont_atrasuno{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.atrasuno{
+	width: 30px;
+	height: 25px;
+	margin-top: 5px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.subtitulo{
+	font-size: 1.6rem;
+}
+.parrafos{
+	margin: 5px 0px;
+	font-size: 1.3;
+}
+.colores{
+	color: #D5D8DC;
+	padding: 0px 5px;
+}
+/*Diseño de la plantilla en diferentes dimensiones*/
+@media(min-width: 385px){
+	.aviso{
+		width: 332px;
+	}
+}
+@media(min-width: 400px){
+	.titulo{
+		font-size: 2.5rem;
+	}
+	.cont_fotos{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.cont{
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 150px;
+	}
+	.emergente{
+		width: 345px;
+	}
+	.exito{
+		font-size: 2rem;
+	}
+}
+@media(min-width: 750px){
+	.contenedor{
+		width: 660px;
+	}
+	.titulo{
+		font-size: 3rem;
+	}
+	.cont_buscar{
+		padding: 0;
+	}
+	.emergente{
+		height: 90px;
+	}
+	.exito{
+		font-size: 2.5rem;
+	}
+}

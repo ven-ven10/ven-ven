@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recuperar Cuenta</title>
+	<meta http-equiv="content-language" content="es">
+	<link rel="stylesheet" type="text/css" href="../estilos/recuperar.css">
+	<link rel="icon" type="jpg/png" href="../imagenes/sistema/logo.png">
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+	<div class="cont_datos">
+		<form class="contenedor1">
+			<h2 class="subtitulos">Recuperar cuenta</h2>
+			<p class="texto1">A continuación proporciona tu nombre, apellido y correo con los cuáles te registraste a la plataforma</p>
+			<input type="text" class="nombre entradas" placeholder="Nombre">
+			<input type="text" class="apellido entradas" placeholder="Apellido">
+			<input type="Email" class="correo entradas" placeholder="Escribe el correo" required>
+			<p class="parrafos parrafo1"></p>
+			<div class="cont_botones">
+				<button class="botones atras">Atrás</button>
+				<button class="botones continuar">Continuar</button>
+			</div>
+		</form>
+	</div>
+	<div class="cont_contraseña">
+		<form class="contenedor2">
+			<h2 class="subtitulos subtitulo2">Cambio de contraseña</h2>
+			<p>Escribe una contraseña nueva y segura:</p>
+			<input type="text" class="contraseña entradas" placeholder="Nueva contraseña">
+			<input type="text" class="confirmar entradas" placeholder="Confirmar contraseña">
+			<p class="parrafos parrafo2"></p>
+			<div class="cont_botones">
+				<button class="botones siguiente">Siguiente</button>
+			</div>
+		</form>
+	</div>
+	<div class="cont_emergente">
+		<div class="error">
+			<p class="texto2">Los datos que ingresaste no son correctos!</p>
+			<div class="cont_botones">
+				<button class="intentar">Volver a intentar</button>
+			</div>
+		</div>
+	</div>
+	<script src="../scripts/recuperar.js"></script>
+</body>
+</html>

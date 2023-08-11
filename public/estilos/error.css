@@ -1,0 +1,51 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #D35400;
+}
+/*Diseño de la plantilla emergente de error*/
+.cont_principal{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.error{
+	width: 90%;
+	text-align: center;
+	color: #D5D8DC;
+	margin: 50px 0px;
+}
+.cont_boton{
+	padding: 10px;
+}
+.boton{
+	cursor: pointer;
+	border: none;
+	padding: 5px 8px;
+	border-radius: 15px;
+	background-color: #D5D8DC;
+	color: #D35400;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+.imagen{
+	width: 220px;
+}
+/*Diseño de la plantilla en diferentes dimensiones*/
+@media(min-width: 430px){
+	.titulo{
+		font-size: 3rem;
+	}
+	.imagen{
+		width: 330px;
+	}
+
+}
+@media(min-width: 700px){
+	.imagen{
+		width: 500px;
+	}
+}

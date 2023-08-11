@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cuenta</title>
+	<meta name="title" content="Cuenta">
+	<meta http-equiv="content-language" content="es">
+	<link rel="stylesheet" type="text/css" href="../estilos/cuenta.css">
+	<link rel="icon" type="jpg/png" href="../../imagenes/sistema/logo.png">
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+	<header class="cont_principal">
+		<div class="cont_datos">
+			<div class="cont_atras">
+				<img src="../imagenes/sistema/atrasn.png" class="atras">
+			</div>
+			<h2 class="titulo">Cuenta</h2>
+			<div class="cont_foto">
+				<img class="foto">
+				<div class="cont_boton">
+					<button class="cambio">Cambiar</button>
+				</div>
+			</div>
+			<div class="informacion">
+				<div class="datos">
+					<h3 class="subtitulos">Nombre:</h3>
+					<p class="parrafos nombre"></p>
+					<button class="botones nom">Cambiar</button>
+				</div>
+				<div class="datos">
+					<h3 class="subtitulos">Apellido:</h3>
+					<p class="parrafos apellido"></p>
+					<button class="botones apell">Cambiar</button>
+				</div>
+				<div class="datos">
+					<h3 class="subtitulos">Correo:</h3>
+					<p class="parrafos correo"></p>
+					<button class="botones corr">Cambiar</button>
+				</div>
+				<div class="datos">
+					<h3 class="subtitulos">Contraseña:</h3>
+					<p class="parrafos contraseña"></p>
+					<button class="botones contr">Cambiar</button>
+				</div>
+			</div>
+			<div class="informacion1">
+				<div class="cont_info">
+					<div class="datos">
+						<h3 class="subtitulos">Nombre:</h3>
+						<p class="parrafos nombre"></p>
+					</div>
+					<div class="datos">
+						<h3 class="subtitulos">Apellido:</h3>
+						<p class="parrafos apellido"></p>
+					</div>
+					<div class="datos">
+						<h3 class="subtitulos">Correo:</h3>
+						<p class="parrafos correo"></p>
+					</div>
+					<div class="datos">
+						<h3 class="subtitulos">Contraseña:</h3>
+						<p class="parrafos contraseña"></p>
+					</div>
+				</div>
+				<div class="cont_botones">
+					<button class="botones nom">Cambiar</button>
+					<button class="botones apell">Cambiar</button>
+					<button class="botones corr">Cambiar</button>
+					<button class="botones contr">Cambiar</button>
+				</div>
+			</div>
+			<div class="cont_boton1">
+				<button class="eliminar">Eliminar cuenta</button>
+			</div>
+		</div>
+	</header>
+	<div class="cont_cambio">
+		<div class="cambiador">
+			<div class="cont_atrasdos">
+				<img src="../../imagenes/sistema/atrasn.png" class="atrasdos">
+				<div></div>
+			</div>
+			<h3 class="diferentes"></h3>
+			<input type="text" class="entradas">
+			<p class="parrafo"></p>
+			<div class="cont_boton">
+				<button class="listouno">Listo</button>
+			</div>
+		</div>
+	</div>
+	<div class="cont_exitoso">
+		<div class="exitoso">
+			<h2 class="subtitulo">Cambio exitoso</h2>
+			<button class="listodos">Listo</button>
+		</div>
+	</div>
+	<div class="cont_eliminar">
+		<div class="plantillauno">
+			<div class="cont_atrastres">
+				<img src="../../imagenes/sistema/atrasn.png" class="atrastres">
+				<div></div>
+			</div>
+			<h2 class="subtitulo">Eliminar cuenta</h2>
+			<p class="texto">Estás a punto de eliminar tu cuenta definitivamente,
+			¿Quieres hacerlo?</p>
+			<div class="cont_boton">
+				<button class="continuar">Continuar</button>
+			</div>
+		</div>
+	</div>
+	<div class="cont_eliminada">
+		<div class="eliminada">
+			<h2 class="subtitulo">Cuenta eliminada</h2>
+			<p class="textouno">Gracias por ser parte de nuestra comunidad.
+			Regresa pronto!</p>
+		</div>
+	</div>
+	<script src="../scripts/cuenta.js"></script>
+</body>
+</html>
