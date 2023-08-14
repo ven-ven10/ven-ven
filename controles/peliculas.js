@@ -10,7 +10,12 @@ require("dotenv").config();
 const crearPelicula = async(req, res)=>{
 	const {nombre, descripcion, categoria} = req.body;
 	const {PELICULA, PORTADA} = req.files;
-	console.log(req.files);
+
+	if(PELICULA==undefined||PORTADA==undefined){
+		return res.status(200).json({
+			res: false
+		});
+	}
 	//Verificando si ya esta registrada la pelicula
 	const existe = await Pelicula.findOne({nombre});
 	if(existe){
